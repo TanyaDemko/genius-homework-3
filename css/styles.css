@@ -1,0 +1,846 @@
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v49-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/roboto-v49-latin-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/play-v21-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/play-v21-latin-700.woff2") format("woff2");
+}
+
+:root {
+  --beauty-landing-2-background: #fff;
+  --beauty-landing-2-s2: #2b7fff;
+  --beauty-landing-2-c1: #011c44;
+  --beauty-landing-2-c3: #4a4a4a;
+  --beauty-landing-2-s4: #ffd02b;
+  --beauty-landing-2-s5: #747272;
+  --beauty-landing-2-c6: #011f4a;
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Poppins", sans-serif;
+  --third-family: "Play", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  display: inline-block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2 {
+  margin-top: 0px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.container-large {
+  max-width: 1288px;
+}
+
+.container-small {
+  max-width: 1060px;
+}
+
+/* Лого і Навігація */
+
+.header {
+  padding: 32px 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+}
+
+.container-navigation {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 56px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.header-link {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16;
+  text-decoration: none;
+  color: var(--beauty-landing-2-c1);
+  transition-duration: 2s;
+}
+
+.header-link:hover {
+  color: var(--beauty-landing-2-s2);
+}
+
+.header-icon {
+  stroke: var(--beauty-landing-2-c1);
+  fill: transparent;
+  transition-duration: 2s;
+}
+
+.header-icon:hover {
+  stroke: var(--beauty-landing-2-s2);
+  fill: transparent;
+}
+
+/* Заголовок і кнопка */
+
+.continer-box2 {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.Cosmetology-clinic {
+  margin-bottom: 16px;
+  color: var(--beauty-landing-2-c1);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+}
+
+.first-section {
+  padding: 123px 0;
+  background-image: url("../images/background-group.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.herro-container {
+  padding: 17px 106px;
+}
+.herro-title {
+  max-width: 529px;
+  margin-bottom: 40px;
+  color: var(--beauty-landing-2-s2);
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 140px;
+  line-height: 0.81;
+  text-transform: capitalize;
+}
+
+.button-main {
+  margin-bottom: 14px;
+  color: var(--beauty-landing-2-background);
+  background: var(--beauty-landing-2-s2);
+  border-radius: 32px;
+  width: 219px;
+  height: 53px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.16;
+  cursor: pointer;
+  transition-duration: 2s;
+}
+
+.button-main:hover {
+  margin-bottom: 14px;
+  background: transparent;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--beauty-landing-2-c1);
+}
+
+.button-main:focus {
+  margin-bottom: 14px;
+  background: transparent;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--beauty-landing-2-c1);
+}
+
+.button-main:active {
+  margin-bottom: 14px;
+  background: var(--beauty-landing-2-s2);
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--beauty-landing-2-c1);
+}
+
+.call-to-action {
+  color: var(--beauty-landing-2-c3);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Перевтілюйтесь в Beauty Zone */
+
+.second-section {
+  padding: 9px 100px;
+}
+
+.Second-title {
+  max-width: 529px;
+  margin-bottom: 40px;
+  color: var(--beauty-landing-2-c1);
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.16;
+}
+
+.Second-title span {
+  color: var(--beauty-landing-2-s2);
+  text-transform: capitalize;
+}
+
+.container-about-us {
+  display: flex;
+  flex-basis: calc(100%-32px / 2);
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.container-transform-beauty {
+  padding: 40px 0px;
+  width: 709px;
+}
+
+.container-photos {
+  min-width: 499px;
+  height: 695px;
+  position: relative;
+}
+
+.photo-after {
+  border-radius: 50%;
+  box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.2);
+  width: 327px;
+  height: 328px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.photo-before {
+  border-radius: 50%;
+  box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.2);
+  width: 327px;
+  height: 328px;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.about-us-star-1 {
+  fill: var(--beauty-landing-2-c6);
+  width: 64px;
+  height: 64px;
+  left: 117px;
+  top: 336px;
+  position: absolute;
+  transform: rotate(-30deg);
+  animation-name: scale;
+  animation-duration: 5s;
+}
+
+@keyframes scale {
+  0% {
+    fill: var(--beauty-landing-2-c6);
+  }
+  25% {
+    fill: var(--beauty-landing-2-background);
+    stroke: var(--beauty-landing-2-c6);
+  }
+  100% {
+    fill: var(--beauty-landing-2-c6);
+  }
+}
+
+.about-us-star-2 {
+  fill: var(--beauty-landing-2-s2);
+  width: 40px;
+  height: 40px;
+  left: 471px;
+  top: 32px;
+  position: absolute;
+  transform: rotate(30deg);
+  animation-name: spin;
+  animation-duration: 5s;
+}
+
+@keyframes spin {
+  0% {
+    fill: var(--beauty-landing-2-s2);
+  }
+  25% {
+    fill: var(--beauty-landing-2-background);
+    stroke: var(--beauty-landing-2-s2);
+  }
+  100% {
+    fill: var(--beauty-landing-2-s2);
+  }
+}
+
+.about-us-star-3 {
+  fill: var(--beauty-landing-2-s5);
+  width: 16px;
+  height: 16px;
+  left: 472px;
+  top: 269px;
+  position: absolute;
+  transform: rotate(-22.91deg);
+}
+
+/* Чомулюди обирають нас */
+
+.About-Us-list {
+  margin-bottom: 40px;
+  color: var(--beauty-landing-2-c1);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.72;
+}
+
+.beauty-bold {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.third-title {
+  width: 550px;
+  text-align: center;
+  margin: 0px auto 48px;
+  color: var(--beauty-landing-2-c1);
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.16;
+}
+
+.third-title span {
+  color: var(--beauty-landing-2-s2);
+  text-transform: capitalize;
+}
+
+.third-section {
+  padding: 88px 0;
+}
+
+.why-us-item {
+  padding: 24px 30px;
+  border-radius: 32px;
+  width: 316px;
+  height: 181px;
+  box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
+  background-color: var(--beauty-landing-2-background);
+}
+
+.why-us-list-icon {
+  margin-bottom: 0px;
+}
+
+.why-us-icon {
+  fill: var(--beauty-landing-2-s2);
+}
+
+.Why-Us-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 56px;
+  margin-bottom: 24px;
+  color: #000;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  font-family: var(--font-family);
+}
+/* Наші процедури */
+
+.container-medium {
+  max-width: 1264px;
+}
+
+.fourth-title {
+  text-align: center;
+  margin-bottom: 48px;
+  color: var(--beauty-landing-2-c1);
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.16;
+}
+
+.fourth-title span {
+  color: var(--beauty-landing-2-s2);
+  text-transform: capitalize;
+}
+
+.fourth-section {
+  padding: 48px 0;
+}
+
+.container-procedures {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 1px solid var(--beauty-landing-2-c1);
+  cursor: pointer;
+}
+
+.carousel-arrow {
+  stroke: var(--beauty-landing-2-c1);
+  fill: transparent;
+}
+
+.carousel-arrow-rotate {
+  stroke: var(--beauty-landing-2-c1);
+  fill: transparent;
+  transform: rotate(180deg);
+}
+
+.carousel-arrow:hover {
+  background-color: var(--beauty-landing-2-s2);
+  border-radius: 50%;
+  transition-duration: 2s;
+}
+
+.carousel-arrow-rotate:hover {
+  background-color: var(--beauty-landing-2-s2);
+  border-radius: 50%;
+  transition-duration: 2s;
+}
+
+.card-list {
+  border: 5px #2b7fff;
+  border-radius: 16px;
+  width: 344px;
+  height: 456px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(1, 28, 68, 0) 47.4%,
+    rgba(1, 28, 68, 0.73) 82.66%,
+    #011c44 99.06%
+  );
+  transition: transfrom 0.3s;
+}
+
+.card-list:hover {
+  transform: scale(1.05);
+}
+
+.card-item {
+  flex-basis: calc(100% / 3);
+}
+
+.Our-Procedures-list {
+  display: flex;
+  gap: 16px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.18;
+  text-align: center;
+  color: var(--beauty-landing-2-s5);
+}
+
+/* Як нас знайти */
+
+.fifth-section {
+  padding: 48px 0;
+}
+
+.contact-form {
+  border-radius: 32px;
+  width: 422px;
+  height: 482px;
+  padding: 48px 56px;
+  background-color: var(--beauty-landing-2-c1);
+}
+
+.submission-application {
+  background: var(--beauty-landing-2-c1);
+  margin-bottom: 32px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--beauty-landing-2-background);
+  text-align: center;
+}
+
+.submission-application span {
+  background: var(--beauty-landing-2-c1);
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--beauty-landing-2-s2);
+}
+
+.contact-container {
+  width: 1059px;
+  height: 479px;
+  display: flex;
+  gap: 32px;
+}
+
+.contact-map {
+  flex-shrink: 0;
+  border: none;
+  border-radius: 32px;
+}
+
+/* Футер */
+
+.footer {
+  background-image: url(../images/footer-background.png);
+  background-color: var(--beauty-landing-2-c1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 56px 100px;
+  position: relative;
+}
+
+.footer:after {
+  background-size: 247px 129px;
+  width: 247px;
+  height: 129px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-image: url(../images/cosmetic-bottles.png);
+  content: "";
+}
+
+.last-container {
+  display: flex;
+  gap: 186px;
+}
+
+.footer-nav,
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  gap: 186px;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-grow: 0;
+}
+
+.address-list,
+.address-info {
+  flex-grow: 0;
+}
+
+.footer-link {
+  margin-bottom: 16px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-decoration: none;
+  color: var(--beauty-landing-2-background);
+  background: var(--beauty-landing-2-c1);
+  transition-duration: 2s;
+}
+
+.footer-link:hover {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--beauty-landing-2-s2);
+}
+
+.contacts-list {
+  width: 192px;
+  margin-bottom: 16px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-decoration: none;
+  color: var(--beauty-landing-2-background);
+  background: var(--beauty-landing-2-c1);
+  transition-duration: 2s;
+}
+
+.contacts-list:hover {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--beauty-landing-2-s2);
+  background: var(--beauty-landing-2-c1);
+}
+
+.footer-icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address-icon {
+  stroke: var(--beauty-landing-2-background);
+  fill: var(--beauty-landing-2-s4);
+  transition-duration: 2s;
+}
+
+.address-icon:hover {
+  stroke: var(--beauty-landing-2-s2);
+}
+
+.privacy-policy {
+  width: 210px;
+  margin-bottom: 16px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-decoration: none;
+  color: var(--beauty-landing-2-background);
+  background: var(--beauty-landing-2-c1);
+  transition-duration: 2s;
+}
+
+.privacy-policy:hover {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--beauty-landing-2-s2);
+  background: var(--beauty-landing-2-c1);
+}
+
+.copy-right {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.15;
+  color: var(--beauty-landing-2-s5);
+  background: var(--beauty-landing-2-c1);
+}
+
+/*--Modal--*/
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(1, 31, 74, 0.4);
+  width: 1440px;
+  height: 1024px;
+  transition: opacity 3s visibility 0.3s;
+}
+
+.modal {
+  position: relative;
+  border-radius: 48px;
+  width: 100%;
+  max-width: 723px;
+  height: 100%;
+  max-height: 700px;
+  padding: 42px 144px;
+  background-color: var(--beauty-landing-2-c1);
+  border-radius: 48px;
+  overflow: auto;
+}
+
+.backdrop.is-hidden {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 42px;
+  right: 42px;
+}
+
+.fifth-title {
+  margin-bottom: 40px;
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+  color: var(--beauty-landing-2-background);
+}
+
+.form-field {
+  margin-bottom: 24px;
+}
+
+.form-label {
+  display: block;
+}
+
+.form-input {
+  padding: 18px 32px;
+  width: 100%;
+  border: 2px solid var(--beauty-landing-2-s5);
+  border-radius: 32px;
+  background-color: transparent;
+  transition-duration: 2s;
+}
+
+.form-input:focus {
+  background-color: var(--beauty-landing-2-s5);
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: var(--beauty-landing-2-background);
+}
+
+.visually-hodden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.button-sign {
+  margin-bottom: 14px;
+  color: var(--beauty-landing-2-background);
+  background: var(--beauty-landing-2-s2);
+  border-radius: 32px;
+  width: 281px;
+  height: 53px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.16;
+  cursor: pointer;
+  margin: 0 auto 15px;
+  display: block;
+  text-decoration: none;
+  transition-duration: 2s;
+}
+
+.button-sign:hover {
+  margin-bottom: 14px;
+  background: transparent;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--beauty-landing-2-background);
+  border: 1px solid var(--beauty-landing-2-background);
+  margin: 0 auto 15px;
+}
+
+.button-sign:focus {
+  margin-bottom: 14px;
+  background: transparent;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--beauty-landing-2-background);
+  border: 1px solid var(--beauty-landing-2-background);
+}
+
+.button-sign:active {
+  margin-bottom: 14px;
+  background: var(--beauty-landing-2-s2);
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--beauty-landing-2-background);
+  border: 1px solid var(--beauty-landing-2-background);
+}
+
+.confidentiality {
+  margin: 0 auto;
+  width: 213px;
+  height: 36px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1, 5;
+  text-align: center;
+  color: var(--beauty-landing-2-s5);
+}
+
+.confidentiality-link {
+  color: var(--beauty-landing-2-s5);
+  text-underline-offset: 2px;
+}
+
+.button-sign:disabled {
+  background-color: var(--beauty-landing-2-s5);
+}
